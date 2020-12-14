@@ -38,6 +38,36 @@ Constraints:
 0 <= a, b, c <= 1000
 */
 
+import java.util.*;
 public class Count_Good_Triplets {
-    
+    public static void main(String args[])
+     {
+        Scanner s = new Scanner(System.in);
+        int i , j, k , cnt = 0 ;
+        int a , b , c ;
+        int n = s.nextInt();
+        a = s.nextInt();
+        b = s.nextInt();
+        c = s.nextInt();
+        int arr[] = new int[n];
+        int len = arr.length;
+        for(i = 0 ; i<len ; i++)
+           arr[i] = s.nextInt();
+
+        
+        for(i= 0 ; i<len ; i++)
+        {
+             for(j = i + 1 ; j<len ; j++)
+             {
+                  if(Math.abs(arr[i] - arr[j]) > a)
+                      continue;
+                  for(k = j + 1 ; k<len ; k++)
+                  {
+                       if(Math.abs(arr[k] - arr[j]) <= b && Math.abs(arr[i] - arr[k]) <= c)
+                           cnt++;
+                  }
+             }
+          }
+       System.out.println(cnt);
+     }
 }
