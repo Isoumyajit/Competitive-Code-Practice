@@ -98,3 +98,73 @@ using namespace std;
          cout<<res[i]<<" ";
         
     }
+/* This algorithm takes around BIG-OH(n) in average */
+
+/* We can improve it if you use Binary Search technique then complexity would be in O(log-n) */
+
+    void Binary(){
+	
+		int mid , i , j , n , x , target;
+		cin>>n;
+		cin>>target;
+        vector<int> res;
+        vector<int> nums;
+        for(i = 0 ;i<n ; i++)
+        {
+        	cin>>x;
+        	nums.push_back(x);
+		}
+        i = 0 ;
+        j = nums.size() - 1;
+        bool flagi = false;
+        bool flagj = false;
+        if(i == j && target == nums[0])
+        {
+            res.push_back(0);
+            res.push_back(0);
+            for(i = 0 ; i<res.size() ; i++)
+         			cout<<res[i]<<" ";
+         	return 0;
+            
+        }
+        while(i < j)
+        {
+            if(nums[i] == target && !flagi)
+            {
+                 flagi = true;
+                res.push_back(i);
+                 if(flagj)
+                 {
+                     reverse(res.begin() , res.end());
+                     break;
+                 }
+            }
+            if(nums[j] == target && !flagj)
+            {
+                flagj = true;
+                res.push_back(j);
+                if(flagi)
+                    break;
+            }
+             if (nums[j] > target)
+            {
+                 j = j - 1;
+            }
+            else 
+                i = i + 1;
+        }
+        
+        if(res.size() == 0)
+        {
+            res.push_back(-1);
+            res.push_back(-1);
+                 
+        }
+        else if(i == j)
+        {
+            res.push_back(i);
+        }
+        for(i = 0 ; i<res.size() ; i++)
+         cout<<res[i]<<" ";
+        
+    }
