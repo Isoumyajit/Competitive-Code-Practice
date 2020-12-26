@@ -116,54 +116,26 @@ using namespace std;
 		}
         i = 0 ;
         j = nums.size() - 1;
-        bool flagi = false;
-        bool flagj = false;
-        if(i == j && target == nums[0])
-        {
-            res.push_back(0);
-            res.push_back(0);
-            for(i = 0 ; i<res.size() ; i++)
-         			cout<<res[i]<<" ";
-         	return 0;
-            
-        }
-        while(i < j)
-        {
-            if(nums[i] == target && !flagi)
-            {
-                 flagi = true;
-                res.push_back(i);
-                 if(flagj)
-                 {
-                     reverse(res.begin() , res.end());
-                     break;
-                 }
-            }
-            if(nums[j] == target && !flagj)
-            {
-                flagj = true;
-                res.push_back(j);
-                if(flagi)
-                    break;
-            }
-             if (nums[j] > target)
-            {
-                 j = j - 1;
-            }
-            else 
-                i = i + 1;
-        }
+        if(nums.size() == 0)
+            return res;
         
-        if(res.size() == 0)
+        first = lower_bound(nums.begin() , nums.end() , target) - nums.begin(); //Lower bound Binary search stl function 
+        last = upper_bound(nums.begin() , nums.end() , target) - nums.begin() -1 ; // upper bound Binary function stl Library
+        
+        if(first == nums.size() || nums[first] != target)
+            return res;
+        
+        if(first == last)
         {
-            res.push_back(-1);
-            res.push_back(-1);
-                 
+            res[0] = first;
+            res[1] = last;
         }
-        else if(i == j)
+        else
         {
-            res.push_back(i);
+            res[0] = first;
+            res[1] = last;
         }
+       return res;
         for(i = 0 ; i<res.size() ; i++)
          cout<<res[i]<<" ";
         
