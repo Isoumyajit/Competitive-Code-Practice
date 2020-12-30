@@ -102,41 +102,41 @@ using namespace std;
 
 /* We can improve it if you use Binary Search technique then complexity would be in O(log-n) */
 
-    void Binary(){
+    // void Binary(){
 	
-		int mid , i , j , n , x , target;
-		cin>>n;
-		cin>>target;
-        vector<int> res;
-        vector<int> nums;
-        for(i = 0 ;i<n ; i++)
-        {
-        	cin>>x;
-        	nums.push_back(x);
-		}
-        i = 0 ;
-        j = nums.size() - 1;
-        if(nums.size() == 0)
-            return res;
+	// 	int mid , i , j , n , x , target;
+	// 	cin>>n;
+	// 	cin>>target;
+    //     vector<int> res;
+    //     vector<int> nums;
+    //     for(i = 0 ;i<n ; i++)
+    //     {
+    //     	cin>>x;
+    //     	nums.push_back(x);
+	// 	}
+    //     i = 0 ;
+    //     j = nums.size() - 1;
+    //     if(nums.size() == 0)
+    //         return res;
         
-        first = lower_bound(nums.begin() , nums.end() , target) - nums.begin(); //Lower bound Binary search stl function 
-        last = upper_bound(nums.begin() , nums.end() , target) - nums.begin() -1 ; // upper bound Binary function stl Library
+    //     first = lower_bound(nums.begin() , nums.end() , target) - nums.begin(); //Lower bound Binary search stl function 
+    //     last = upper_bound(nums.begin() , nums.end() , target) - nums.begin() -1 ; // upper bound Binary function stl Library
         
-        if(first == nums.size() || nums[first] != target)
-            return res;
+    //     if(first == nums.size() || nums[first] != target)
+    //         return res;
         
-        if(first == last)
-        {
-            res[0] = first;
-            res[1] = last;
-        }
-        else
-        {
-            res[0] = first;
-            res[1] = last;
-        }
-       return res;
-        for(i = 0 ; i<res.size() ; i++)
-         cout<<res[i]<<" ";
+    //     if(first == last)
+    //     {
+    //         res[0] = first;
+    //         res[1] = last;
+    //     }
+    //     else
+    //     {
+    //         res[0] = first;
+    //         res[1] = last;
+    //     }
+    //    return res;
+    //     for(i = 0 ; i<res.size() ; i++)
+    //      cout<<res[i]<<" ";
         
-    }
+    // }

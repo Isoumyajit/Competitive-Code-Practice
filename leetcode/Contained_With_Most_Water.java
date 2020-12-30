@@ -38,7 +38,6 @@ n = height.length
 */
 
 import java.util.*;
-
 public class Contained_With_Most_Water {
 
     public static void main(String args[]) {
@@ -48,6 +47,7 @@ public class Contained_With_Most_Water {
 
         for (int i = 0; i < n; i++)
             arr[i] = s.nextInt();
+    
 
         for (int i = 0, j = arr.length - 1; i < j;) {
             int minimum = Math.min(arr[i], arr[j]);
@@ -58,5 +58,6 @@ public class Contained_With_Most_Water {
                 j--;
         }
         System.out.println("The total Water is " + maxsum);
+        s.close();
     }
 }

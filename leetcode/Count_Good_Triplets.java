@@ -69,5 +69,6 @@ public class Count_Good_Triplets {
              }
           }
        System.out.println(cnt);
+       s.close();
      }
 }

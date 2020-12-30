@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class sPIRAL_mATRIX {
+class sPIRAL_mATRIX {
     
     public static void main(String args[])
     {
@@ -37,5 +37,7 @@ public class sPIRAL_mATRIX {
                 k++;
             }
         }
+        s.close();
     }
+   
 }
