@@ -41,6 +41,6 @@ class Sort_Array_By_Parity{
         int ans[] = obj.sortArrayByParityII(arr);
         for(int i = 0 ; i<ans.length ; i++)
            System.out.print(ans[i] +" ");
-
+        s.close();
     }
 }

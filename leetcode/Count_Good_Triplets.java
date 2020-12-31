@@ -54,7 +54,7 @@ public class Count_Good_Triplets {
         for(i = 0 ; i<len ; i++)
            arr[i] = s.nextInt();
 
-        
+        s.close();
         for(i= 0 ; i<len ; i++)
         {
              for(j = i + 1 ; j<len ; j++)
@@ -69,6 +69,5 @@ public class Count_Good_Triplets {
              }
           }
        System.out.println(cnt);
-       s.close();
      }
 }
