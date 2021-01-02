@@ -23,6 +23,6 @@ public class Height_Checker {
             
         }
         System.out.println(cnt);
-       
+        s.close();
     }
 }
