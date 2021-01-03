@@ -1,4 +1,4 @@
-package january_2021;
+
 import java.util.*;
 
 
@@ -86,7 +86,7 @@ public class Chef_and_Division_3 {
 		        System.out.print(sum/k);
 		    }
 		   System.out.println();
-		 
+		 s.close();
 
       }
     }
