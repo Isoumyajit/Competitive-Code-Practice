@@ -1,8 +1,9 @@
 
 import java.util.*;
-
-
 /*
+
+Jnaury Long Challenge 2021 ==> https://www.codechef.com/JAN21C/problems/DIVTHREE
+
 
 Chef wants to host some Division-3 contests. Chef has N setters who are busy creating new problems for him. The ith setter has made Ai problems where 1≤i≤N.
 
