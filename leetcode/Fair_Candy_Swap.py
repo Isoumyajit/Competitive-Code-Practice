@@ -7,13 +7,9 @@ for i in range(n):
 for i in range(n1):
     data1.append(int(input()))
 
-suma = 0
-sumb = 0
+suma = sum(data)
+sumb = sum(data1)
 
-for i in data:
-    suma += i
-for i in data1:
-    sumb += i
 data1 = set(data1)
 diff = (sumb - suma) // 2
 

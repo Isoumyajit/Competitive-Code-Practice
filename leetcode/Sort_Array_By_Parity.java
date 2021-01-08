@@ -1,6 +1,7 @@
 import java.util.*;
 
 class Solution {
+    
     public int[] sortArrayByParityII(int[] A) {
           
         int i = 0, j = A.length - 1;
