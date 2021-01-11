@@ -5,7 +5,6 @@ public class The_K_Weakest_Rows_in_a_Matrix {
     public static void main(String args[])
     { 
             Scanner s = new Scanner(System.in);
-            
             s.close();
     }
 }
@@ -13,10 +12,11 @@ public class The_K_Weakest_Rows_in_a_Matrix {
 class The_K_Weakest_Rows_in_a_Matrix_solution{
     public int[] kWeakestRows(int[][] mat, int k) {
         
-         int i , j;
+         int i , j ;
          int cnt = 0;
          int ans[] = new int[k];
          HashMap<Integer , Integer > temp = new LinkedHashMap<Integer, Integer>();
+
          for(i = 0 ; i<mat.length ; i++)
          {
              cnt = 0;
@@ -29,6 +29,7 @@ class The_K_Weakest_Rows_in_a_Matrix_solution{
                }
               temp.put(i , cnt);
          }
+
        temp = sortByValue(temp);
        i = 0;
        for(Map.Entry<Integer , Integer> f: temp.entrySet())
