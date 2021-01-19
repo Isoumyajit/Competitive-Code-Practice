@@ -43,7 +43,7 @@ int main()
 	  {
 	  	 printf("Accico Equi pairs are in range :{ %d , %d } \n" ,start-1, end+1 );
 	  	 printf("Pair1 = { %d , %d} \n\n" , 0 , start-2);
-	  	 printf("pair2 = {%d %d } \n\n" , start , end );
+	  	 printf("pair2 = {%d  , %d } \n\n" , start , end );
 	  	 printf("Pair3 = { %d , %d } \n\n" , end+2 , n-1);
 	  }
 	  else{
