@@ -10,18 +10,35 @@ public class ShortestSubArrayToBeRemoved {
         }
         s.close();
         // ......
-        Stack<Integer> helper = new Stack<Integer>();
-        Stack<Integer> subarray = new Stack<Integer>();
-        for (int i = arr.length - 1; i >= 0; i--) {
-            if (i == arr.length - 1) {
-                helper.push(i);
-            } else {
-                if (!helper.isEmpty() && arr[helper.peek()] >= arr[i]) {
-                    helper.push(i);
-                } else {
-                    subarray.push(arr[i]);
-                }
+
+        int i, j;
+        for (i = 0; i < arr.length - 1;) {
+            if (arr[i] <= arr[i + 1]) {
+                i++;
             }
         }
+        for (j = arr.length - 1; j > i;) {
+            if (arr[j] >= arr[j - 1]) {
+                j--;
+            }
+        }
+        if (i == 0 && j == 0)
+            System.out.println(0);
+        if ((i == 0 && j == arr.length - 1)) {
+            if (arr[i] <= arr[j])
+                System.out.println(arr.length - 2);
+            else
+                System.out.println(arr.length - 1);
+        }
+        int right = 0, left = j, answer = Math.min(arr.length - i - 1, j);
+        while (right <= i && left <= arr.length - 1) {
+            if (arr[right] <= arr[left]) {
+                answer = Math.min(answer, left - right - 1);
+                left++;
+            } else {
+                right++;
+            }
+        }
+        System.out.println(answer);
     }
 }
