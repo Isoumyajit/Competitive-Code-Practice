@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BestTimetoBuyandSell",
+            "request": "launch",
+            "mainClass": "BestTimetoBuyandSell",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
             "name": "Launch AllposibleSubstring",
             "request": "launch",
             "mainClass": "AllposibleSubstring",
