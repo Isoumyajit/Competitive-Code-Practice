@@ -1,0 +1,259 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch AllposibleSubstring",
+            "request": "launch",
+            "mainClass": "AllposibleSubstring",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Array_Partition1",
+            "request": "launch",
+            "mainClass": "Array_Partition1",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Average_Salary",
+            "request": "launch",
+            "mainClass": "Average_Salary",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch CombiationSum",
+            "request": "launch",
+            "mainClass": "CombiationSum",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch CombinationSum2",
+            "request": "launch",
+            "mainClass": "CombinationSum2",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Contained_With_Most_Water",
+            "request": "launch",
+            "mainClass": "Contained_With_Most_Water",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Count_Good_Triplets",
+            "request": "launch",
+            "mainClass": "Count_Good_Triplets",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Decomprase_run_length",
+            "request": "launch",
+            "mainClass": "Decomprase_run_length",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Final_Prices_with_spcl_dis",
+            "request": "launch",
+            "mainClass": "Final_Prices_with_spcl_dis",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Find_Lucky_Number",
+            "request": "launch",
+            "mainClass": "Find_Lucky_Number",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Find_Nunique_integers_sum_zero",
+            "request": "launch",
+            "mainClass": "Find_Nunique_integers_sum_zero",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Find_Words_That_Can_Be_Formed_by_Characters",
+            "request": "launch",
+            "mainClass": "Find_Words_That_Can_Be_Formed_by_Characters",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Find_common_character",
+            "request": "launch",
+            "mainClass": "Find_common_character",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Flipping_An_Image",
+            "request": "launch",
+            "mainClass": "Flipping_An_Image",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Height_Checker",
+            "request": "launch",
+            "mainClass": "Height_Checker",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Jewels_and_Stones",
+            "request": "launch",
+            "mainClass": "Jewels_and_Stones",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch LetterCombination",
+            "request": "launch",
+            "mainClass": "LetterCombination",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Make_two_arrays_equal_by_reversing",
+            "request": "launch",
+            "mainClass": "Make_two_arrays_equal_by_reversing",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Matrix01",
+            "request": "launch",
+            "mainClass": "Matrix01",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaximumSumSubmatrix",
+            "request": "launch",
+            "mainClass": "MaximumSumSubmatrix",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Minimum_Absolute_Difference",
+            "request": "launch",
+            "mainClass": "Minimum_Absolute_Difference",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Minimum_units_of_truc",
+            "request": "launch",
+            "mainClass": "Minimum_units_of_truc",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Replace_elements_with_greatest_rigth_side",
+            "request": "launch",
+            "mainClass": "Replace_elements_with_greatest_rigth_side",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch SameConsecutiveDiff",
+            "request": "launch",
+            "mainClass": "SameConsecutiveDiff",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Sort_Array_By_Parity",
+            "request": "launch",
+            "mainClass": "Sort_Array_By_Parity",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringToNumbermapping",
+            "request": "launch",
+            "mainClass": "StringToNumbermapping",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch String_ZIGZAG",
+            "request": "launch",
+            "mainClass": "String_ZIGZAG",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Sum_Of_Even_After_query",
+            "request": "launch",
+            "mainClass": "Sum_Of_Even_After_query",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch The_K_Weakest_Rows_in_a_Matrix",
+            "request": "launch",
+            "mainClass": "The_K_Weakest_Rows_in_a_Matrix",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch UniqueChars",
+            "request": "launch",
+            "mainClass": "UniqueChars",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Valid_Mountain_Array",
+            "request": "launch",
+            "mainClass": "Valid_Mountain_Array",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch WordSubsets",
+            "request": "launch",
+            "mainClass": "WordSubsets",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch generatepranthesis",
+            "request": "launch",
+            "mainClass": "generatepranthesis",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch largest_Number_atLisT_Twice",
+            "request": "launch",
+            "mainClass": "largest_Number_atLisT_Twice",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch sPIRAL_mATRIX",
+            "request": "launch",
+            "mainClass": "sPIRAL_mATRIX",
+            "projectName": "Leetcode_265925c4"
+        }
+    ]
+}
