@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Fibbonacci_Sequence",
+            "request": "launch",
+            "mainClass": "Fibbonacci_Sequence",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch SortmatrixDiagonally",
+            "request": "launch",
+            "mainClass": "SortmatrixDiagonally",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringAbbreviation",
+            "request": "launch",
+            "mainClass": "StringAbbreviation",
+            "projectName": "Leetcode_265925c4"
+        },
+        {
+            "type": "java",
             "name": "Launch BestTimetoBuyandSell",
             "request": "launch",
             "mainClass": "BestTimetoBuyandSell",
