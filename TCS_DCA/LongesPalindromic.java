@@ -21,11 +21,7 @@ public class LongesPalindromic {
             int index = i;
             for (int j = 0; j < length; j++) {
                 if (str.charAt(index) == str.charAt(j)) {
-                    if (temp[j + 1][index - 1] == 1) {
-                        start = j;
-                        end = index;
-                        temp[j][index++] = 1;
-                    } else if (index == j + 1) {
+                    if (temp[j + 1][index - 1] == 1 || index == j + 1) {
                         start = j;
                         end = index;
                         temp[j][index++] = 1;
