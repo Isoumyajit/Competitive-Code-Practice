@@ -1,7 +1,7 @@
-class resutrant_Bill {
+// class resutrant_Bill {
 
-}
+// }
 
-public class Main {
+// public class Main {
 
-}
+// }

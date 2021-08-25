@@ -1,3 +1,4 @@
+package Search_in_sorted_rotated_array;
 
 import java.util.*;
 
@@ -12,6 +13,7 @@ class search_in_rotated_sortedArray {
           int target = s.nextInt();
           Solution obj = new Solution();
           System.out.print(obj.search(nums, target));
+          s.close();
      }
 }
 

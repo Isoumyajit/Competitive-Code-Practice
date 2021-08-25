@@ -6,5 +6,6 @@ public class Niladri {
         int n = s.nextInt();
         String value = String.valueOf(n);
         System.out.println(value.charAt(0) + " " + value.charAt(value.length() - 1));
+        s.close();
     }
 }

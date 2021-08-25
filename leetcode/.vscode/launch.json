@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch find_Peak_Element",
+            "request": "launch",
+            "mainClass": "find_Peak_Element",
+            "projectName": "Leetcode_8ad62cbc"
+        },
+        {
+            "type": "java",
             "name": "Launch Fibbonacci_Sequence",
             "request": "launch",
             "mainClass": "Fibbonacci_Sequence",

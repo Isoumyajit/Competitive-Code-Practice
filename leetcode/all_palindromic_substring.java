@@ -40,6 +40,7 @@ class all_palindromes {
                 }
             }
         }
+
         int length = str.length() - 1;
         for (int i = 1; i < str.length(); i++) {
 

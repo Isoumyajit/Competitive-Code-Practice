@@ -1,6 +1,6 @@
 import java.util.*;
 
-class sPIRAL_mATRIX {
+class Spiral_Matrix {
     
     public static void main(String args[])
     {

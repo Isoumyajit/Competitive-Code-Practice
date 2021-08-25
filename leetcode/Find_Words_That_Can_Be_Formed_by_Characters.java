@@ -34,60 +34,59 @@ All strings contain lowercase English letters only.
 */
 import java.util.*;
 
-class Find_Words_That_Can_Be_Formed_by_Characters{
-    
-    public static void main(String args[]){
-    Scanner s = new Scanner(System.in);
-    int n = s.nextInt();
-    String[] arr = new String[n];
-    for(int i = 0 ; i<n ; i++){
-            arr[i] = s.nextLine();
-    }
-    
-    String temp = s.nextLine();
+class Find_Words_That_Can_Be_Formed_by_Characters {
 
-    Solution_Find obj = new Solution_Find();
-    System.out.print(obj.countCharacters(arr, temp));
-    s.close();
-  }
-   
+    public static void main(String args[]) {
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        String[] arr = new String[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = s.nextLine();
+        }
+
+        String temp = s.nextLine();
+
+        Solution_Find obj = new Solution_Find();
+        System.out.print(obj.countCharacters(arr, temp));
+        s.close();
+    }
+
 }
 
-class Solution_Find{
+class Solution_Find {
     public int countCharacters(String[] words, String chars) {
-        
-        int  i = 0 , len = chars.length();
-        int sum_len = 0 , cnt = 0;
-        
+
+        int i = 0, len = chars.length();
+        int sum_len = 0, cnt = 0;
+
         int hash[] = new int[26];
-         int temp[] = new int[26];  
-        
-        Arrays.fill(hash , 0);
-        for(i = 0 ; i<len ; i++){
+        int temp[] = new int[26];
+
+        Arrays.fill(hash, 0);
+        for (i = 0; i < len; i++) {
             hash[chars.charAt(i) - 97]++;
         }
-        
-        for(i = 0 ; i<words.length ; i++){
-            
+
+        for (i = 0; i < words.length; i++) {
+
             sum_len = 0;
             temp = hash.clone();
-            for(int j = 0 ; j<words[i].length() ; j++){
-                
-                if(temp[words[i].charAt(j) - 97] == 0){
+            for (int j = 0; j < words[i].length(); j++) {
+
+                if (temp[words[i].charAt(j) - 97] == 0) {
                     break;
-                }
-                else{
+                } else {
                     sum_len += 1;
                     temp[words[i].charAt(j) - 97]--;
                 }
-                
+
             }
-            
-            if(words[i].length() == sum_len){
+
+            if (words[i].length() == sum_len) {
                 cnt += sum_len;
             }
         }
-     return cnt;
-        
+        return cnt;
+
     }
 }
