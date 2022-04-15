@@ -26,54 +26,30 @@ public class mergeIntervals {
 class SolutionmergeIntervals {
     public static int[][] merge(int[][] intervals) {
 
-        List<Integer> start = new ArrayList<>();
-        List<Integer> ends = new ArrayList<>();
-
-        List<List<Integer>> helper = new LinkedList<>();
         int len = intervals.length;
-        Arrays.sort(intervals, new Comparator<int[]>() {
+        List<List<Integer>> helper = new LinkedList<>();
 
-            @Override
-            public int compare(int[] o1, int[] o2) {
-                // TODO Auto-generated method stub
-                if (o1[0] < o2[0]) {
-                    return -1;
-                } else
-                    return 1;
+        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
 
+        int start = intervals[0][0];
+        int end = intervals[0][1];
+        for (int i = 1; i < len; i++) {
+            if (end >= intervals[i][0]) {
+                end = Math.max(end, intervals[i][1]);
+            } else if (end < intervals[i][0]) {
+                List<Integer> lst = new ArrayList<Integer>();
+                lst.addAll(Arrays.asList(start, end));
+                start = intervals[i][0];
+                end = intervals[i][1];
+                helper.add(lst);
             }
-
-        });
-
-        for (int i = 0; i < intervals.length; i++) {
-            start.add(intervals[i][0]);
-            ends.add(intervals[i][1]);
         }
-        // System.out.println(start + " " + ends);
-        int position = 0;
-        int k = 0;
-        while (position < len) {
-
-            int j = position + 1;
-            while (j < len && ends.get(k) >= start.get(j)) {
-                j++;
-
-            }
-            k = j - 1;
-            List<Integer> dummy = new ArrayList<Integer>();
-            dummy.addAll(Arrays.asList(start.get(position), ends.get(k)));
-            // System.out.println(dummy);
-            helper.add(dummy);
-            position = j;
-            k = j;
-
-        }
+        helper.add(Arrays.asList(start, end));
         int[][] answer = new int[helper.size()][2];
-        for (int i = 0; i < helper.size(); i++) {
+        for (int i = 0; i < answer.length; i++) {
             answer[i][0] = helper.get(i).get(0);
             answer[i][1] = helper.get(i).get(1);
         }
-
         return answer;
     }
 }
