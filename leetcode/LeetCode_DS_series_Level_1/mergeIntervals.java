@@ -29,7 +29,7 @@ class SolutionmergeIntervals {
         int len = intervals.length;
         List<List<Integer>> helper = new LinkedList<>();
 
-        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
+        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
 
         int start = intervals[0][0];
         int end = intervals[0][1];
@@ -51,5 +51,33 @@ class SolutionmergeIntervals {
             answer[i][1] = helper.get(i).get(1);
         }
         return answer;
+    }
+}
+
+// Solution 2
+class SolutionmergeIntervals1 {
+    public static int[][] merge(int[][] intervals) {
+
+        // if(intervals.length == 1)return new int[0][];
+        int len = intervals.length;
+        List<int[]> answer = new ArrayList<>();
+
+        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
+
+        int start = intervals[0][0];
+        int end = intervals[0][1];
+        for (int i = 1; i < len; i++) {
+            if (end >= intervals[i][0]) {
+                end = Math.max(end, intervals[i][1]);
+            } else if (end < intervals[i][0]) {
+                answer.add(new int[] { start, end });
+                start = intervals[i][0];
+                end = intervals[i][1];
+
+            }
+        }
+        answer.add(new int[] { start, end });
+
+        return answer.toArray(new int[0][]);
     }
 }
