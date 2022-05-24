@@ -2,6 +2,8 @@
     "java.project.sourcePaths": [
         "Leetcode",
         "GeeksForGeeks",
-        "TCS_DCA/DesignPatterns"
+        "TCS_DCA/DesignPatterns",
+        ".",
+        "leetcode\\LeetCode_DS_series_Level_1"
     ]
 }

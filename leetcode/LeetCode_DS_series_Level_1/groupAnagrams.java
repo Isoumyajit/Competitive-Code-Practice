@@ -23,6 +23,7 @@ class SolutionGroupAnagrams {
     public static List<List<String>> anagram(String[] strs) {
 
         List<List<String>> answer = new LinkedList<>();
+
         int len = strs.length;
         if (len == 0) {
             answer.add(new ArrayList<>());
