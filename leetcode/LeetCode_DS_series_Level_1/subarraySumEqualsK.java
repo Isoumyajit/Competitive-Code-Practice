@@ -21,7 +21,6 @@ class SolutionSubArraySumEqualsK {
         int len = nums.length;
         HashMap<Integer, Integer> helper = new HashMap<>();
         int prefixSum = 0;
-
         helper.put(prefixSum, 1);
         for (int i = 0; i < len; i++) {
             prefixSum += nums[i];

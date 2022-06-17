@@ -18,6 +18,7 @@ class SolutionrepititiveDNA {
 
         int len = str.length();
         List<String> helper = new ArrayList<>();
+
         HashMap<String, Integer> map = new HashMap<>();
         for (int i = 0; i < len - 9; i++) {
             String sub = str.substring(i, i + 10);
