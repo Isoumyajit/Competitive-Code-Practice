@@ -38,7 +38,6 @@ public class queueReconstructionByHeight {
                         count--;
                     }
                 }
-
                 in = i == len ? i - 1 : i;
                 for (i = in; i < len; i++) {
                     if (answer[i][0] == -1) {
