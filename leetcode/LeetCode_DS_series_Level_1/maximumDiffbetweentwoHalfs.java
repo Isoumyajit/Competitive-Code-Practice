@@ -1,7 +1,7 @@
 import java.util.Collections;
 import java.util.PriorityQueue;
 
-class Solution {
+public class maximumDiffbetweentwoHalfs {
     long colosseum(int N, int A[]) {
         // code here
 

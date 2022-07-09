@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 
-class Solution {
+public class longestFibonacciSeq {
     public int lenLongestFibSubseq(int[] arr) {
 
         int len = arr.length;
@@ -21,7 +21,6 @@ class Solution {
                 }
             }
         }
-        ArrayList<Integer> s = new ArrayList<>();
 
         return maxLen;
     }
