@@ -1,4 +1,4 @@
-class Solution {
+public class wiggleSubsequence {
     public int wiggleMaxLength(int[] nums) {
 
         int len = nums.length;

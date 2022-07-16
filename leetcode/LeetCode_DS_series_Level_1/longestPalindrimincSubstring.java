@@ -1,3 +1,5 @@
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class longestPalindrimincSubstring {
@@ -35,7 +37,7 @@ class SolutionLongestPalindrimicSubstring {
                 start = i;
                 end = j;
             }
-        }
+            
 
         while (index_count < len) {
 
