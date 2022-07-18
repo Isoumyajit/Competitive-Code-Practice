@@ -1,6 +1,6 @@
 import java.util.List;
 
-class Solution {
+public class wordBreakI {
     public boolean wordBreak(String s, List<String> wordDict) {
 
         int len = s.length();

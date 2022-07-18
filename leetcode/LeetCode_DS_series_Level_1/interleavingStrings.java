@@ -66,7 +66,7 @@ public class interleavingStrings {
     }
 
     /*
-     * Dynamic programming Approach - 1
+     * Dynamic programming Approach - 1 Memoraization + recursion
      */
     public static boolean isInterleavewithDP(String s1, String s2, String s3) {
 
@@ -106,6 +106,42 @@ public class interleavingStrings {
         }
 
         return false;
+    }
+
+    /*
+     * Dynamic Programming Approach -2 Tabulation
+     */
+    public static boolean isInterleavewithDP2(String s1, String s2, String s3) {
+
+        int len1 = s1.length();
+        int len2 = s2.length();
+        int len3 = s3.length();
+        if (len1 == 0 && len2 == 0 && len3 == 0)
+            return true;
+        if (len1 + len2 != len3)
+            return false;
+        Boolean[][] visited = new Boolean[len1 + 1][len2 + 1];
+
+        for (int row = 0; row < visited.length; row++) {
+            for (int col = 0; col < visited[0].length; col++) {
+                if (row == 0 && col == 0)
+                    visited[row][col] = true;
+                else if (row == 0) {
+                    if (s3.charAt(row + col - 1) == s2.charAt(col - 1))
+                        visited[row][col] = visited[row][col - 1];
+                } else if (col == 0) {
+                    if (s3.charAt(row + col - 1) == s1.charAt(row - 1))
+                        visited[row][col] = visited[row - 1][col];
+                } else {
+                    if (s3.charAt(row + col - 1) == s2.charAt(col - 1)) {
+                        visited[row][col] = visited[row][col - 1];
+                    } else if (s3.charAt(row + col - 1) == s1.charAt(row - 1)) {
+                        visited[row][col] = visited[row - 1][col];
+                    }
+                }
+            }
+        }
+        return visited[visited.length - 1][visited[0].length - 1];
     }
 
 }

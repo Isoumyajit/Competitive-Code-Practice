@@ -15,6 +15,7 @@ public class wordSearch {
         int col = board[0].length;
 
         boolean visited[][] = new boolean[row][col];
+        boolean x[][] = visited.clone();
         for (int index = 0; index < row; index++) {
             for (int j = 0; j < col; j++) {
                 if (word.charAt(0) == board[index][j] && !visited[index][j]) {

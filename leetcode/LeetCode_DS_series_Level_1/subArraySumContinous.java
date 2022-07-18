@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-class Solution {
+public class subArraySumContinous {
     public boolean checkSubarraySum(int[] nums, int k) {
 
         boolean answer = false;
