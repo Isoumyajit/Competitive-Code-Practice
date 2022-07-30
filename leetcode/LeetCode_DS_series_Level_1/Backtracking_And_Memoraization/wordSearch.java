@@ -1,3 +1,5 @@
+package Backtracking_And_Memoraization;
+
 public class wordSearch {
     public boolean exist(char[][] board, String word) {
 
@@ -45,5 +47,15 @@ public class wordSearch {
             visited[row][col] = false;
         }
         return false;
+    }
+}
+
+class trie {
+    char x;
+    trie[] nextnode;
+
+    trie(char c) {
+        nextnode = new trie[26];
+
     }
 }

@@ -41,7 +41,7 @@ class SolutionLongestPalindrimicSubstring {
 
         while (index_count < len) {
 
-            for (int i = 0, j = index_count; j < len; i++, j++) {
+            for ( i = 0, j = index_count; j < len; i++, j++) {
                 if (str.charAt(i) == str.charAt(j)) {
                     if (mat[i + 1][j - 1] == 1) {
                         mat[i][j] = 1;
@@ -61,7 +61,7 @@ class SolutionLongestPalindrimicSubstring {
         if (start == -1 && end == -1) {
             answer += str.charAt(0);
         } else {
-            for (int i = start; i < end + 1; i++) {
+            for (i = start; i < end + 1; i++) {
                 answer += str.charAt(i);
             }
         }
