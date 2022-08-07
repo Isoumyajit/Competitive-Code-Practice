@@ -1,5 +1,4 @@
-import java.util.LinkedList;
-import java.util.Queue;
+
 import java.util.Scanner;
 
 public class longestPalindrimincSubstring {
@@ -37,33 +36,34 @@ class SolutionLongestPalindrimicSubstring {
                 start = i;
                 end = j;
             }
-            
 
-        while (index_count < len) {
+            while (index_count < len) {
 
-            for ( i = 0, j = index_count; j < len; i++, j++) {
-                if (str.charAt(i) == str.charAt(j)) {
-                    if (mat[i + 1][j - 1] == 1) {
-                        mat[i][j] = 1;
-                        start = i;
-                        end = j;
+                for (i = 0, j = index_count; j < len; i++, j++) {
+                    if (str.charAt(i) == str.charAt(j)) {
+                        if (mat[i + 1][j - 1] == 1) {
+                            mat[i][j] = 1;
+                            start = i;
+                            end = j;
+                        } else {
+                            mat[i][j] = 0;
+                        }
                     } else {
                         mat[i][j] = 0;
                     }
-                } else {
-                    mat[i][j] = 0;
+
                 }
-
+                index_count++;
             }
-            index_count++;
-        }
 
-        if (start == -1 && end == -1) {
-            answer += str.charAt(0);
-        } else {
-            for (i = start; i < end + 1; i++) {
-                answer += str.charAt(i);
+            if (start == -1 && end == -1) {
+                answer += str.charAt(0);
+            } else {
+                for (i = start; i < end + 1; i++) {
+                    answer += str.charAt(i);
+                }
             }
+
         }
         return answer;
     }
